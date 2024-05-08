@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form action="">
+        <div class="form-example">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required placeholder="Enter your name"/>
+        </div>
+        <div class="form-example">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="Enter your email"/>
+        </div>
+        <div class="form-example">
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age" required placeholder="Enter your age"/>
+        </div>
+        <div class="form-example">
+            <label for="description">Wich option best describes you?</label>
+            <select name="description" id="description">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+            </select>
+        </div>
+        <fieldset class="form-example">
+            <legend>Would you recommend GeeksforGeeks to a friend?</legend>
+            
+            <div>
+                <input type="radio" id="recommendChoice1" name="recommend" value="yes" required/>
+                <label for="recommendChoice1">Yes</label>
+                
+                <input type="radio" id="recommendChoice2" name="recommend" value="no" />
+                <label for="recommendChoice2">No</label>
+                
+                <input type="radio" id="recommendChoice3" name="recommend" value="maybe" />
+                <label for="recommendChoice3">Maybe</label>
+            </div>
+        </fieldset>
+        <fieldset class="form-example">
+            <legend>Languages and Frameworks known <span>(Check all that apply)</span></legend>
+          
+            <div>
+              <input type="checkbox" id="language1" name="languages" required />
+              <label for="language1">C</label>
+            </div>
+          
+            <div>
+              <input type="checkbox" id="language2" name="languages" value="c++"/>
+              <label for="language2">C++</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="language3" name="languages" value="c#"/>
+                <label for="language3">C#</label>
+              </div>
+
+            <div>
+                <input type="checkbox" id="language4" name="languages" value="java"/>
+                <label for="language4">Java</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="language5" name="languages" value="python"/>
+                <label for="language5">Python</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="language6" name="languages" value="javascript"/>
+                <label for="language6">JavaScript</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="language7" name="languages" value="react"/>
+                <label for="language7">React</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="language8" name="languages" value="angular"/>
+                <label for="language8">Angular</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="language9" name="languages" value="django"/>
+                <label for="language9">Django</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="language10" name="languages" value="spring"/>
+                <label for="language10">Spring</label>
+            </div>
+        </fieldset>
+        <div class="form-example">
+            <label for="comments">Any comments or suggestions</label>
+
+            <textarea id="comments" name="comments" rows="5">
+            
+            </textarea>
+        </div>
+        <div class="form-example">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
 </body>
 </html>
