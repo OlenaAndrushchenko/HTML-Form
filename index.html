@@ -4,108 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form action="">
-        <div class="form-example">
-          <label for="name">Name</label>
+    <h1>HTML form</h1>
+    <form class="form-vertical" action="">
+        
+        <label class="label-vertical" for="name">Name
           <input type="text" name="name" id="name" required placeholder="Enter your name"/>
-        </div>
-        <div class="form-example">
-          <label for="email">Email</label>
+        </label>
+
+        <label class="label-vertical" for="email">Email
           <input type="email" name="email" id="email" required placeholder="Enter your email"/>
-        </div>
-        <div class="form-example">
-            <label for="age">Age</label>
+        </label>
+        
+        <label class="label-vertical" for="age">Age
             <input type="text" name="age" id="age" required placeholder="Enter your age"/>
-        </div>
-        <div class="form-example">
-            <label for="description">Wich option best describes you?</label>
+        </label> 
+        
+        <label class="label-vertical" for="description">Wich option best describes you?
             <select name="description" id="description">
                 <option value="student">Student</option>
                 <option value="teacher">Teacher</option>
                 <option value="developer">Developer</option>
                 <option value="designer">Designer</option>
             </select>
-        </div>
-        <fieldset class="form-example">
+        </label>
+        
+        <fieldset class="fieldset-vertical">
             <legend>Would you recommend GeeksforGeeks to a friend?</legend>
             
-            <div>
+            <label for="recommendChoice1">
                 <input type="radio" id="recommendChoice1" name="recommend" value="yes" required/>
-                <label for="recommendChoice1">Yes</label>
-                
+                Yes
+            </label>
+            <label for="recommendChoice2">
                 <input type="radio" id="recommendChoice2" name="recommend" value="no" />
-                <label for="recommendChoice2">No</label>
-                
+                No
+            </label>
+            <label for="recommendChoice3">
                 <input type="radio" id="recommendChoice3" name="recommend" value="maybe" />
-                <label for="recommendChoice3">Maybe</label>
-            </div>
+                Maybe
+            </label>
         </fieldset>
-        <fieldset class="form-example">
+
+        <fieldset class="fieldset-vertical">
             <legend>Languages and Frameworks known <span>(Check all that apply)</span></legend>
-          
-            <div>
-              <input type="checkbox" id="language1" name="languages" required />
-              <label for="language1">C</label>
-            </div>
-          
-            <div>
-              <input type="checkbox" id="language2" name="languages" value="c++"/>
-              <label for="language2">C++</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="language3" name="languages" value="c#"/>
-                <label for="language3">C#</label>
-              </div>
-
-            <div>
+            <label for="language1">
+                <input type="checkbox" id="language1" name="languages" required />
+                C
+            </label>
+            <label for="language2">
+                <input type="checkbox" id="language2" name="languages" value="c++"/>
+                C++
+            </label>     
+            <label for="language3">
+                <input type="checkbox" id="language3" name="languages" value="c#"/>                
+                C#
+            </label>
+            <label for="language4">
                 <input type="checkbox" id="language4" name="languages" value="java"/>
-                <label for="language4">Java</label>
-            </div>
-
-            <div>
+                Java
+            </label>
+            <label for="language5">
                 <input type="checkbox" id="language5" name="languages" value="python"/>
-                <label for="language5">Python</label>
-            </div>
-
-            <div>
+                Python
+            </label>
+            <label for="language6">
                 <input type="checkbox" id="language6" name="languages" value="javascript"/>
-                <label for="language6">JavaScript</label>
-            </div>
-
-            <div>
+                JavaScript
+            </label>
+            <label for="language7">
                 <input type="checkbox" id="language7" name="languages" value="react"/>
-                <label for="language7">React</label>
-            </div>
-
-            <div>
+                React
+            </label>
+            <label for="language8">
                 <input type="checkbox" id="language8" name="languages" value="angular"/>
-                <label for="language8">Angular</label>
-            </div>
-
-            <div>
+                Angular
+            </label>
+            <label for="language9">
                 <input type="checkbox" id="language9" name="languages" value="django"/>
-                <label for="language9">Django</label>
-            </div>
-
-            <div>
+                Django
+            </label>
+            <label for="language10">
                 <input type="checkbox" id="language10" name="languages" value="spring"/>
-                <label for="language10">Spring</label>
-            </div>
+                Spring
+            </label>  
         </fieldset>
-        <div class="form-example">
-            <label for="comments">Any comments or suggestions</label>
+        
+        <label class="label-vertical" for="comments">Any comments or suggestions
+            <textarea id="comments" name="comments" rows="5"></textarea>
+        </label>
 
-            <textarea id="comments" name="comments" rows="5">
-            
-            </textarea>
-        </div>
-        <div class="form-example">
           <input type="submit" value="Submit" />
-        </div>
       </form>
 </body>
 </html>
